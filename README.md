@@ -94,7 +94,7 @@ Hand sign recognition and finger gesture recognition can add and change training
 ### Hand sign recognition training
 #### 1.Learning data collection
 Press "k" to enter the mode to save key points（displayed as 「MODE:Logging Key Point」）<br>
-<img src="![102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447](https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/fba821ef-9bf4-40e1-bcf3-9c11a1c28526)" width="60%"> <br><br>
+![102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447](https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/fba821ef-9bf4-40e1-bcf3-9c11a1c28526) <br><br>
 
 If you press "0" to "9", the key points will be added to "model/keypoint_classifier/keypoint.csv" as shown below.<br>
 1st column: Pressed number (used as class ID), 2nd and subsequent columns: Key point coordinates<br>

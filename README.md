@@ -1,4 +1,4 @@
-# Hand-Gesture-Recognition
+# Hand-Gesture-Recognition-using-Mediapipe
 Estimate hand pose using MediaPipe (Python version).<br> This is a sample 
 program that recognizes hand signs and finger gestures with a simple MLP using the detected key points.
 
@@ -140,5 +140,5 @@ The model using "LSTM" is as follows. <br>
 * [MediaPipe](https://mediapipe.dev/)
 
 # License 
-Hand-Gesture-Recognition is under [Apache v2 license](LICENSE).
+Hand-Gesture-Recognition-using-Mediapipe is under [Apache v2 license](LICENSE).
 

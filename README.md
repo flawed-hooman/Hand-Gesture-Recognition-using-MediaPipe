@@ -20,10 +20,6 @@ This repository contains the following contents.
 * matplotlib 3.3.2 or Later (For displaying the confusion matrix)
 
 # Demo
-Here's how to run the demo using your webcam.
-```bash
-python app.py
-```
 
 The following options can be specified when running the demo.
 * --device<br>Specifying the camera device number (Default：0)
@@ -35,30 +31,7 @@ Detection confidence threshold (Default：0.5)
 * --min_tracking_confidence<br>
 Tracking confidence threshold (Default：0.5)
 
-# Directory
-<pre>
-│  app.py
-│  keypoint_classification.ipynb
-│  point_history_classification.ipynb
-│  
-├─model
-│  ├─keypoint_classifier
-│  │  │  keypoint.csv
-│  │  │  keypoint_classifier.hdf5
-│  │  │  keypoint_classifier.py
-│  │  │  keypoint_classifier.tflite
-│  │  └─ keypoint_classifier_label.csv
-│  │          
-│  └─point_history_classifier
-│      │  point_history.csv
-│      │  point_history_classifier.hdf5
-│      │  point_history_classifier.py
-│      │  point_history_classifier.tflite
-│      └─ point_history_classifier_label.csv
-│          
-└─utils
-    └─cvfpscalc.py
-</pre>
+# Details
 ### app.py
 This is a sample program for inference.<br>
 In addition, learning data (key points) for hand sign recognition,<br>
@@ -104,12 +77,11 @@ The key point coordinates are ---.<br>
 <img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/0aa027c8-5bcd-4ade-8eb0-fd96bc9a0de3" width="80%"> <br><br>
 
 In the initial state, three types of learning data are included: open hand (class ID: 0), close hand (class ID: 1), and pointing (class ID: 2).<br>
-If necessary, add 3 or later, or delete the existing data of csv to prepare the training data.<br>
+
 <img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/44cf6691-9333-43d6-ab3b-793f13646240" width="25%">　<img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/29ec8c64-50f6-4599-b27e-83a3e6b46d7c" width="25%">　<img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/53bd3c25-aaf5-4bef-b80b-d61ae4c405a2" width="25%">
 
 #### 2.Model training
-Open "[keypoint_classification.ipynb](keypoint_classification.ipynb)" in Jupyter Notebook and execute from top to bottom.<br>
-To change the number of training data classes, change the value of "NUM_CLASSES = 3" <br>and modify the label of "model/keypoint_classifier/keypoint_classifier_label.csv" as appropriate.<br><br>
+The "[keypoint_classification.ipynb](keypoint_classification.ipynb)" contains the model training details. <br><br>
 
 #### 3.Model structure
 The image of the model prepared in "[keypoint_classification.ipynb](keypoint_classification.ipynb)" is as follows.
@@ -127,8 +99,7 @@ In the initial state, 4 types of learning data are included: stationary (class I
 <img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/9f5ad166-8cc9-4791-8225-d9a031e4758a" width="20%">　<img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/ba8dc561-1070-4941-8e94-6cf3c5cdcc78" width="20%">　<img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/15c7043b-e614-4932-bf79-c2fdafbfd6f9" width="20%">　<img src="https://github.com/flawed-hooman/Hand-Gesture-Recognition-using-MediaPipe/assets/117461708/90072df1-235d-45bd-8fbe-e63d5294afec" width="20%">
 
 #### 2.Model training
-Open "[point_history_classification.ipynb](point_history_classification.ipynb)" in Jupyter Notebook and execute from top to bottom.<br>
-To change the number of training data classes, change the value of "NUM_CLASSES = 4" and <br>modify the label of "model/point_history_classifier/point_history_classifier_label.csv" as appropriate. <br><br>
+The "[point_history_classification.ipynb](point_history_classification.ipynb)" contains model training details.<br><br>
 
 #### X.Model structure
 The image of the model prepared in "[point_history_classification.ipynb](point_history_classification.ipynb)" is as follows.

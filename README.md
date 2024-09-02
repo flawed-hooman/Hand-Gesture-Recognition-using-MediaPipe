@@ -20,7 +20,7 @@ This repository contains the following contents.
 * matplotlib 3.3.2 or Later (For displaying the confusion matrix)
 
 # Demo
-
+Run app.py for the demo.
 The following options can be specified when running the demo.
 * --device<br>Specifying the camera device number (Default：0)
 * --width<br>Width at the time of camera capture (Default：960)
